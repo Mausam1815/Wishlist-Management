@@ -6,15 +6,15 @@ This is a Spring Boot application for managing wishlists. Users can add, view, a
 ## Project Structure
 The project follows a standard Spring Boot application structure with the following main components:
 
-- **DTOs (Data Transfer Objects):** Represent data exchanged between the client and the server.
-- **Entities:** JPA entities representing database tables.
-- **Repositories:** Spring Data JPA repositories for CRUD operations on entities.
-- **Services:** Service classes containing business logic.
-- **Controllers:** Spring MVC controllers for handling HTTP requests.
-- **Exceptions:** Custom exception classes.
-- **JWT (JSON Web Token) Configuration:** Configuration for JWT-based authentication.
-- **Global Exception Handler:** Centralized exception handling for the application.
-- **Security Configuration:** Configuration for Spring Security.
+- **`DTOs (Data Transfer Objects)` :** Represent data exchanged between the client and the server.
+- **`Entities`:** JPA entities representing database tables.
+- **`Repositories` :** Spring Data JPA repositories for CRUD operations on entities.
+- **`Services` :** Service classes containing business logic.
+- **`Controllers` :** Spring MVC controllers for handling HTTP requests.
+- **`Exceptions` :** Custom exception classes.
+- **`JWT (JSON Web Token) Configuration` :** Configuration for JWT-based authentication.
+- **`Global Exception Handler` :** Centralized exception handling for the application.
+- **`Security Configuration` :** Configuration for Spring Security.
 
 ## How to Run
 
@@ -47,20 +47,20 @@ The project follows a standard Spring Boot application structure with the follow
 - `Maven` -> A build automation tool used for managing dependencies and building the project.
 
 ## Functionality
-1. **User Management**
+1. **`User Management`**
 - Users can register with their name, email and password.
 - Passwords are securely hashed using Spring Security's `PasswordEncoder`.
 
-2. **Wishlist Management**
+2. **`Wishlist Management`**
 - Users can add items to their wishlist by providing a name, description, and price.
 - Users can view their wishlist, which displays all items they have added.
 - Users can delete items from their wishlist.
 
-3. **Authentication and Authorization**
+3. **`Authentication and Authorization`**
 - JWT-based authentication is used to secure the API endpoints.
 - Upon successful login, users receive a JWT token, which they include in subsequent requests for authentication.
 - Access to certain endpoints is restricted based on the user's role.
 
-4. **Exception Handling**
+4. **`Exception Handling`**
 - Custom exceptions are defined for different error scenarios, such as user not found or item not present in wishlist.
 - A global exception handler centrally manages exception handling and maps exceptions to appropriate HTTP responses.
